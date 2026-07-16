@@ -71,27 +71,24 @@ let package = Package(
         .library(name: "TencentEffect_X1-02", targets: ["TencentEffect_X1-02"]),
         .library(name: "TencentEffect_X1-02_nobundle", targets: ["TencentEffect_X1-02_nobundle"]),
         .library(name: "TencentEffect_X1-02_nolibpag", targets: ["TencentEffect_X1-02_nolibpag"]),
-        // All & Edit
+        // All
         .library(name: "TencentEffect_All", targets: ["TencentEffect_All"]),
         .library(name: "TencentEffect_All_nobundle", targets: ["TencentEffect_All_nobundle"]),
         .library(name: "TencentEffect_All_nolibpag", targets: ["TencentEffect_All_nolibpag"]),
-        .library(name: "TencentEffect_Edit", targets: ["TencentEffect_Edit"]),
-        .library(name: "TencentEffect_Edit_nobundle", targets: ["TencentEffect_Edit_nobundle"]),
-        .library(name: "TencentEffect_Edit_nolibpag", targets: ["TencentEffect_Edit_nolibpag"]),
     ],
     
     targets: [
         // ============ Binary Targets ============
-        .binaryTarget(name: "XMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/XMagic.xcframework.zip", checksum: "356568d357e4a552a2b1315570f42d7d72c6883ba367b38e9339d386e856e406"),
-        .binaryTarget(name: "YTCommonXMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/YTCommonXMagic.xcframework.zip", checksum: "aa58a7ee8bfe76cab13575d62d169894492b0bc56cab947d46ce73c6beff81fb"),
-        .binaryTarget(name: "libpag", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/libpag.xcframework.zip", checksum: "ae9f882a28e679142dd30398049b64181168c8d944a956735f011350e9e79d02"),
-        .binaryTarget(name: "TECodec", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/TECodec.xcframework.zip", checksum: "e66ddf73d68cc5ffcc94ebaa7e1aef9079d7db51769134663d9458bb1639f042"),
+        .binaryTarget(name: "XMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/XMagic.xcframework.zip", checksum: "b8b9ac5077f911a16765a56fd5d87d7b6e641fb4fbffdcc05a828c77254a65a5"),
+        .binaryTarget(name: "YTCommonXMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/YTCommonXMagic.xcframework.zip", checksum: "60f3b9cbad8f5b0a46b9ed9b2e267b07747d7016fa839805e3613f97503f032a"),
+        .binaryTarget(name: "libpag", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/libpag.xcframework.zip", checksum: "f782c458d78335c3aa6f8e492c609f7f286a5b5ef89287b3f46c369eb876fa55"),
+        .binaryTarget(name: "TECodec", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/TECodec.xcframework.zip", checksum: "9040ff09c464256523f8773ee30abd01b91cdc64bbd6545de622cd66c1576f40"),
         // 资源包 - Basic (LightCore.bundle)
-        .binaryTarget(name: "XMagicResources_Basic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/Resources/Basic/XMagicResources.xcframework.zip", checksum: "05f6706ce23227777abd1c4899e664eaefd3e999624b1da21d3c1c431cc15609"),
+        .binaryTarget(name: "XMagicResources_Basic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/Resources/Basic/XMagicResources.xcframework.zip", checksum: "cfc44370d612c3a460f2a8e01bdafba143048ea142030704b341ace25ae81a23"),
         // 资源包 - Standard (LightCore + LightSegmentPlugin + LightHandPlugin)
-        .binaryTarget(name: "XMagicResources_Standard", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/Resources/Standard/XMagicResources.xcframework.zip", checksum: "cba44167997b7f78f2c532a0de44f05cddb9fbe69e094cae427be6f85026f089"),
+        .binaryTarget(name: "XMagicResources_Standard", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/Resources/Standard/XMagicResources.xcframework.zip", checksum: "8e71a20e5789e60264b778ff7eb7d9c0caa1047a609eaae1bcf6ceb0785827da"),
         // 资源包 - All (全部 5 个 bundle)
-        .binaryTarget(name: "XMagicResources_All", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.2.0.21/Resources/All/XMagicResources.xcframework.zip", checksum: "864684698f3d71bcb02866357c1599a4b11320fda308278873c697930771bd1f"),
+        .binaryTarget(name: "XMagicResources_All", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/Resources/All/XMagicResources.xcframework.zip", checksum: "a4b423c01b656e64f71b8634d93dadba2b018fbed0dc31bf3dd94d667217e6f9"),
         
         // ============ A1-02 (Basic 资源) ============
         .target(name: "TencentEffect_A1-02", dependencies: ["XMagic", "YTCommonXMagic", "libpag", "TECodec", "XMagicResources_Basic"], path: "Sources/TencentEffect_A1-02", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
@@ -168,9 +165,6 @@ let package = Package(
         .target(name: "TencentEffect_All_nobundle", dependencies: ["XMagic", "YTCommonXMagic", "libpag", "TECodec"], path: "Sources/TencentEffect_All_nobundle", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
         .target(name: "TencentEffect_All_nolibpag", dependencies: ["XMagic", "YTCommonXMagic", "TECodec", "XMagicResources_All"], path: "Sources/TencentEffect_All_nolibpag", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
         
-        // ============ Edit (All 资源) ============
-        .target(name: "TencentEffect_Edit", dependencies: ["XMagic", "YTCommonXMagic", "libpag", "TECodec", "XMagicResources_All"], path: "Sources/TencentEffect_Edit", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
-        .target(name: "TencentEffect_Edit_nobundle", dependencies: ["XMagic", "YTCommonXMagic", "libpag", "TECodec"], path: "Sources/TencentEffect_Edit_nobundle", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
-        .target(name: "TencentEffect_Edit_nolibpag", dependencies: ["XMagic", "YTCommonXMagic", "TECodec", "XMagicResources_All"], path: "Sources/TencentEffect_Edit_nolibpag", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
+
     ]
 )

@@ -79,16 +79,16 @@ let package = Package(
     
     targets: [
         // ============ Binary Targets ============
-        .binaryTarget(name: "XMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/XMagic.xcframework.zip", checksum: "b8b9ac5077f911a16765a56fd5d87d7b6e641fb4fbffdcc05a828c77254a65a5"),
-        .binaryTarget(name: "YTCommonXMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/YTCommonXMagic.xcframework.zip", checksum: "60f3b9cbad8f5b0a46b9ed9b2e267b07747d7016fa839805e3613f97503f032a"),
-        .binaryTarget(name: "libpag", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/libpag.xcframework.zip", checksum: "f782c458d78335c3aa6f8e492c609f7f286a5b5ef89287b3f46c369eb876fa55"),
-        .binaryTarget(name: "TECodec", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/TECodec.xcframework.zip", checksum: "9040ff09c464256523f8773ee30abd01b91cdc64bbd6545de622cd66c1576f40"),
+        .binaryTarget(name: "XMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/Dynamic/XMagic.xcframework.zip", checksum: "5167467600397e4ba19b7a1cf1f65e1e73ad504f200231c6e7399fd295c7ddfe"),
+        .binaryTarget(name: "YTCommonXMagic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/YTCommonXMagic.xcframework.zip", checksum: "76e950fade6f04d2481c2b84c38c93efa84159f6005476ea842718ac082ee546"),
+        .binaryTarget(name: "libpag", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/libpag.xcframework.zip", checksum: "f52dfe82a6f3e460fc2bd40d310342e352330da16052d5f71b2c450a48f74150"),
+        .binaryTarget(name: "TECodec", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/TECodec.xcframework.zip", checksum: "3819c017fbbf2b360f1d752ca09952bd637583801d7a84745ab1b6b54b5871e5"),
         // 资源包 - Basic (LightCore.bundle)
-        .binaryTarget(name: "XMagicResources_Basic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/Resources/Basic/XMagicResources.xcframework.zip", checksum: "cfc44370d612c3a460f2a8e01bdafba143048ea142030704b341ace25ae81a23"),
+        .binaryTarget(name: "XMagicResources_Basic", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/Resources/Basic/XMagicResources.xcframework.zip", checksum: "56984222b95d801a7b5f76cf54fca7efb8af61cb169958c765c03649f1399271"),
         // 资源包 - Standard (LightCore + LightSegmentPlugin + LightHandPlugin)
-        .binaryTarget(name: "XMagicResources_Standard", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/Resources/Standard/XMagicResources.xcframework.zip", checksum: "8e71a20e5789e60264b778ff7eb7d9c0caa1047a609eaae1bcf6ceb0785827da"),
+        .binaryTarget(name: "XMagicResources_Standard", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/Resources/Standard/XMagicResources.xcframework.zip", checksum: "0861fc40c6c80537c4592f722e9ad6e273f4e51841670323095dd072df70de63"),
         // 资源包 - All (全部 5 个 bundle)
-        .binaryTarget(name: "XMagicResources_All", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.11/Resources/All/XMagicResources.xcframework.zip", checksum: "a4b423c01b656e64f71b8634d93dadba2b018fbed0dc31bf3dd94d667217e6f9"),
+        .binaryTarget(name: "XMagicResources_All", url: "https://mediacloud-76607.gzc.vod.tencent-cloud.com/TencentEffect/iOS/SwiftPM/4.3.0.25/Resources/All/XMagicResources.xcframework.zip", checksum: "e5f037e768237ef7a8ad277a2de28175de87c59377b39cfcff2d84ce796587b4"),
         
         // ============ A1-02 (Basic 资源) ============
         .target(name: "TencentEffect_A1-02", dependencies: ["XMagic", "YTCommonXMagic", "libpag", "TECodec", "XMagicResources_Basic"], path: "Sources/TencentEffect_A1-02", sources: ["TencentEffect.swift"], linkerSettings: commonLinkerSettings),
